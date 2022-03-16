@@ -43,7 +43,7 @@ main {
   border: 1px solid red;
   border-radius: 4px;
   width: 380px;
-  height: 240px;
+  height: 200px;
 
   display: flex;
   flex-flow: column nowrap;
