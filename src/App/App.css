@@ -1,0 +1,30 @@
+.App {
+  border: 1px solid red;
+  border-radius: 4px;
+  width: 72vw;
+  height: 48vh;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.header {
+  text-align: center;
+}
+
+h1 {
+  color: #555555;
+}
+
+.lastname {
+  color: #000000;
+}
+
+ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
