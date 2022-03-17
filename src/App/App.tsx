@@ -1,23 +1,37 @@
-import React, { useState} from 'react';
+import { useState } from 'react';
 import './App.css';
 import Hobbies from '../Hobbies/Hobbies'
-import Hobby from "../Hobbies/Hobbies"
+import Details from '../Details/Details'
 
 function App() {
-  let hobbies = ["software engineer", "blogger","noober"]
+  let hobbies = ["Daniel Ohn", "a software engineer", "a blogger","a noober"]
 
   const [num, setNum] = useState(0);
+  const [hide, setHide] = useState('hide');
+
+  const details = {
+    title: 'a software engineer',
+    items: [
+      {
+        id: 0,
+        name: 'Github/DanielOhn',
+        url: "https://github.com/DanielOhn",
+        content: "Follow me on github to see all the projects I'm coding."
+      },
+    ]
+  }
 
   let rightClick = () => {
-    if (num == hobbies.length-1) {
+    if (num === hobbies.length-1) {
       setNum(0)
+      setHide("details")
     } else {
       setNum(num + 1)
     }
   }
   
   let leftClick = () => {
-    if (num == 0) {
+    if (num === 0) {
       setNum(hobbies.length - 1)
     } else {
       setNum(num - 1)
@@ -37,8 +51,7 @@ function App() {
         </ul>
       </nav>
       <main>
-
-        <h3>I'm a...</h3>
+        <h3>I am...</h3>
         <div className="card">
           <button onClick={() => leftClick()}>L</button>
           <div className="content">
@@ -48,6 +61,14 @@ function App() {
           <button onClick={() => rightClick()}>R</button>
         </div>
       </main>
+
+      <div className='details'>
+        <Details 
+          title={details.title}
+          items={details.items}
+        />
+      </div>
+      
     </div>
   );
 }

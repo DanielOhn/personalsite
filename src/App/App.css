@@ -19,13 +19,13 @@ h1 {
   color: #000000;
 }
 
-ul {
+.navbar ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
 }
 
-li {
+.navbar li {
   list-style-type: none;
 }
 
