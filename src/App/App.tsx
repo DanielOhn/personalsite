@@ -2,32 +2,22 @@ import { useState } from 'react';
 import './App.css';
 import Hobbies from '../Hobbies/Hobbies'
 import Details from '../Details/Details'
+import details from "./details.json"
+
 
 function App() {
-  let hobbies = ["Daniel Ohn", "a software engineer", "a blogger","a noober"]
+  let hobbies = ["Daniel Ohn", "a software engineer"]
 
   const [num, setNum] = useState(0);
-  const [hide, setHide] = useState('hide');
-
-  const details = {
-    title: 'a software engineer',
-    items: [
-      {
-        id: 0,
-        name: 'Github/DanielOhn',
-        url: "https://github.com/DanielOhn",
-        content: "Follow me on github to see all the projects I'm coding."
-      },
-    ]
-  }
+  const [detail, setDetail] = useState(details.data[0]);
 
   let rightClick = () => {
     if (num === hobbies.length-1) {
       setNum(0)
-      setHide("details")
     } else {
       setNum(num + 1)
     }
+    updateDetail()
   }
   
   let leftClick = () => {
@@ -36,11 +26,16 @@ function App() {
     } else {
       setNum(num - 1)
     }
+    updateDetail()
+  }
+
+  let updateDetail = () => {
+    setDetail(details.data[num])
   }
 
   return (
     <div className="App">
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <div className="header">
           <h1>Daniel <b className='lastname'>Ohn</b></h1>
         </div>
@@ -49,7 +44,7 @@ function App() {
           <li>Projects</li>
           <li>Contact</li>
         </ul>
-      </nav>
+      </nav> */}
       <main>
         <h3>I am...</h3>
         <div className="card">
@@ -64,8 +59,8 @@ function App() {
 
       <div className='details'>
         <Details 
-          title={details.title}
-          items={details.items}
+          title={detail.title}
+          items={detail.items}
         />
       </div>
       

@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "title": "welcome",
+            "items": [
+                {
+                    "id": 0,
+                    "name": "i'm catsby",
+                    "url": "",
+                    "content": "Welcome to my website... I like to create things such as websites, 3D models, games, and more!"
+                }
+            ]
+        },
+        {
+            "title": "projects",
+            "items": [
+                {
+                    "id": 0,
+                    "name": "Github/DanielOhn",
+                    "url": "https://github.com/DanielOhn",
+                    "content": "Follow me on github to see all the projects I'm coding."
+                }, {
+                    "id": 1,
+                    "name": "Kanye Tweets",
+                    "url": "",
+                    "content": "Generates a random Kanye Tweet made with React."
+                }
+            ]
+        }
+    ]
+}

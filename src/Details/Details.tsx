@@ -19,7 +19,12 @@ function Details(props: Projects) {
             <h2>{props.title}</h2>
             {props.items.map((item) => 
                 <div className="item">
-                    <h3><a href={item.url}>{item.name}</a></h3>
+                    {item.url === "" &&
+                        <h3>{item.name}</h3>
+                    }
+                    {item.url !== "" &&
+                        <h3><a href={item.url}>{item.name}</a></h3>
+                    }
                     <p>{item.content}</p>
                 </div>
             )}

@@ -1,3 +1,5 @@
 .details {
-    border: 1px solid gree;
+    border: 1px solid green;
+    width: 50vw;
+    margin: auto;
 }
