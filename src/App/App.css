@@ -1,10 +1,8 @@
 .App {
-  border: 1px solid red;
-  border-radius: 4px;
-  width: 72vw;
-  height: 48vh;
+  width: 100vw;
+  height: 100vh;
   margin: auto;
-  margin-top: 5vh;
+  padding-top: 5vh;
 }
 
 .header {
@@ -31,7 +29,7 @@ h1 {
 
 main {
   border: 1px solid red;
-  width: 98%;
+  width: 80%;
   margin: auto;
 
   display:flex;
@@ -60,6 +58,40 @@ main {
 
 .card button {
   height: 64px;
-  width: 64px;
+  width: 32px;
 
+}
+
+#welcome {
+  background-color: #779BE7;
+  color: #F1E9DB;
+}
+
+#welcome h1 {
+  color: #673C4F;
+}
+
+#welcome h2, h3 {
+  color: #816C61;
+}
+
+#welcome a:visited, a:link {
+  color: #16425B;
+}
+
+#projects {
+  background-color: #03191E;
+  color: #D7EBBA;
+}
+
+#projects h1 {
+  color: #FEFFBE;
+}
+
+#projects h2, h3 {
+  color: #EBD494;
+}
+
+#projects a:visited, a:link {
+  color: #9AD2CB;
 }

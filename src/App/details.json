@@ -22,8 +22,14 @@
                 }, {
                     "id": 1,
                     "name": "Kanye Tweets",
-                    "url": "",
+                    "url": "https://kanye-tweet-quotes.netlify.app",
                     "content": "Generates a random Kanye Tweet made with React."
+                },
+                {
+                    "id": 2,
+                    "name": "Poké App",
+                    "url": "https://poke-site.netlify.app",
+                    "content": "Gotta catch 'em all"
                 }
             ]
         }

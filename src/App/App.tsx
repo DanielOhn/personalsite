@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" id={detail.title}>
       {/* <nav className="navbar">
         <div className="header">
           <h1>Daniel <b className='lastname'>Ohn</b></h1>
@@ -58,7 +58,7 @@ function App() {
       </main>
 
       <div className='details'>
-        <Details 
+        <Details
           title={detail.title}
           items={detail.items}
         />
