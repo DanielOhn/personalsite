@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Hobbies from '../Hobbies/Hobbies'
 import Details from '../Details/Details'
@@ -11,13 +11,16 @@ function App() {
   const [num, setNum] = useState(0);
   const [detail, setDetail] = useState(details.data[0]);
 
+  useEffect(() => {
+    updateDetail()
+  }, [num])
+
   let rightClick = () => {
-    if (num === hobbies.length-1) {
+    if (num === hobbies.length - 1) {
       setNum(0)
     } else {
       setNum(num + 1)
     }
-    updateDetail()
   }
   
   let leftClick = () => {
@@ -26,7 +29,6 @@ function App() {
     } else {
       setNum(num - 1)
     }
-    updateDetail()
   }
 
   let updateDetail = () => {
