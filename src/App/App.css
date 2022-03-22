@@ -3,6 +3,11 @@
   height: 100vh;
   margin: auto;
   padding-top: 5vh;
+
+
+  -webkit-transition: background-color 1.5s ease-in;
+  -ms-transition: background-color 1.5s ease-in;
+  transition: background-color 1.5s ease-in;
 }
 
 .header {
