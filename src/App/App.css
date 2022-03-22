@@ -40,7 +40,7 @@ main {
 .content {
   border: 1px solid red;
   border-radius: 4px;
-  width: 380px;
+  width: 400px;
   height: 200px;
 
   display: flex;

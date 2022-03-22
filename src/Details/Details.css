@@ -1,6 +1,7 @@
 .details {
     border: 1px solid green;
-    width: 50vw;
+    border-radius: 4px;
+    width: 420px;
     margin: auto;
 }
 

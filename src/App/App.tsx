@@ -12,7 +12,7 @@ function App() {
   const [detail, setDetail] = useState(details.data[0]);
 
   useEffect(() => {
-    updateDetail()
+    setDetail(details.data[num])
   }, [num])
 
   let rightClick = () => {
@@ -29,10 +29,6 @@ function App() {
     } else {
       setNum(num - 1)
     }
-  }
-
-  let updateDetail = () => {
-    setDetail(details.data[num])
   }
 
   return (
